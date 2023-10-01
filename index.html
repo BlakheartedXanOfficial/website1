@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Page Title</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="left-side">
+				<div class="nav-link-wrapper">
+					<a href="index.html">Home</a>
+				</div>
+				
+				<div class="nav-link-wrapper active-nav-link">
+					<a href="about.html">About</a>
+				</div>
+			</div>
+			
+			<div class="right-side">
+				<div class="brand">
+					<div>BLAKHEARTED XAN</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content-wrapper">
+			<div class="portfolio-items-wrapper">
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(download/istockphoto-1450584085-170667a.webp)"></div>
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="download/premium_photo-1661914978519-52a11fe159a7.jpeg">
+						</div>
+						
+						<div class="subtitle">
+							I built this site, which was among the top 50 in the year 2018.
+						</div>
+					</div>
+				</div>
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(download/istockphoto-1450584085-170667a.webp)"></div>
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="download/photo-1496200186974-4293800e2c20.jpeg" alt="">
+						</div>
+						
+						<div class="subtitle">
+							A superb site.
+						</div>
+					</div>
+				</div>
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(download/istockphoto-1450584085-170667a.webp)"></div>
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="download/photo-1516876437184-593fda40c7ce.jpeg" alt="">
+						</div>
+						
+						<div class="subtitle">
+							Learn whatever you want to know.
+						</div>
+					</div>
+				</div>
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(download/istockphoto-1450584085-170667a.webp)"></div>
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="download/photo-1549924231-f129b911e442.jpeg" alt="">
+						</div>
+						
+						<div class="subtitle">
+							Built to last.
+						</div>
+					</div>
+				</div>
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(download/istockphoto-1450584085-170667a.webp)"></div>
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="download/photo-1551150441-3f3828204ef0.jpeg" alt="">
+						</div>
+						
+						<div class="subtitle">
+							Feel the power.
+						</div>
+					</div>
+				</div>
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(download/istockphoto-1450584085-170667a.webp)"></div>
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="download/photo-1584441405886-bc91be61e56a.jpeg" alt="">
+						</div>
+						
+						<div class="subtitle">
+							A life well deserved.
+						</div>
+					</div>
+				</div>
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(download/istockphoto-1450584085-170667a.webp)"></div>
+					
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							<img src="download/premium_photo-1682216872195-0bfacc36b02c.jpeg" alt="">
+						</div>
+						
+						<div class="subtitle">
+							Be the best you can be.
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	
+	</div>
+</body>
+<script>
+	const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+	
+	portfolioItems.forEach(portfolioItem => {
+		portfolioItem.addEventListener('mouseover', () => {
+			portfolioItem.childNodes.classList.add('img-darken');
+		})
+		
+		portfolioItem.addEventListener('mouseout', () => {
+			portfolioItem.childNodes.classList.remove('img-darken');
+		})
+	})
+</script>
+</html>
